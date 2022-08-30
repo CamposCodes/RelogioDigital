@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+:root{
+    --morning:linear-gradient(25deg, #14aefd, #9ac1c7, #cdd58d, #f0eb44);
+    --afternoon:linear-gradient(25deg, #c91c3e, #dd5f3e, #ef8f3a, #ffbd30);
+    --night:linear-gradient(25deg, #000621, #092262, #0c3bad, #0755ff);
+    --colorM:#14aefd;
+    --colorA:#ef8f3a;
+    --colorN:#092262;
+}
+
+*{
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,.5);
+}
+.relogio div{
+    height: 170px;
+    width: 150px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(5,5,5,.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+.relogio span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+.relogio span.tempo{
+    font-size: 12px;
+}
+
+.data{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 275px;
+    background: transparent;
+    background: rgba(5,5,5,.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+    border-radius: 7px;
+}
+.data div{
+    height: 75px;
+    width: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    letter-spacing: 3px;
+}
+.data span{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.data span.datas{
+    font-size: 8px;
+}
+.datas{
+    padding-top: 20px;
+}
+
+img{
+    width: 55px;
+    height: 55px;
+}
+ .imageLocal{
+    width: 80vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#imageTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background: rgba(5,5,5,.9);
+    box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+    border-radius: 100px;
+}
+
+.all:hover{
+    cursor: pointer;
+}
